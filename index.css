@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+
+*{
+	padding: 0;
+	margin: 0; 
+  box-sizing: content-box;
+}
+
+:root{
+  --main-font: 'Source Sans Pro', sans-serif;
+  --secondary-font: 'Herr Von Muellerhoff', cursive;
+  --body-font: 'Cabin', sans-serif;
+  --main-font-color-dark: #252525;
+  --secondary-font-color: #c59d5f;
+  --body-font-color: #f1f1f1;
+  --body-font-size: 1.2rem;
+  --secondary-font-size: 4rem;
+}
+
+html{
+	color: var(--body-font-color);
+  background: #111; 
+	scroll-behavior: smooth;
+}
+
+body{
+	width: 100%;
+}
+
+/*header section*/
+header{
+	width: 100%;
+  height: 100vh;
+}
+
+/*Navigation pane*/
+.sidenav {
+	height: 100%;
+	width: 0; 
+	position: fixed; 
+	z-index: 1; 
+	top: 0;
+	left: 0;
+	background-color: #1a1a1a;
+	overflow-x: hidden;
+	padding-top: 60px; 
+	transition: 0.5s; 
+}
+
+/* The navigation menu links */
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+.fa-bars{
+  font-size: 1.6rem;
+	color: #fff;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+/*progress container and bar indicator*/
+/*.progress-container {
+	  position: fixed;
+	  top: 0;
+	  left: 2rem;
+    width: 100%;
+  	height: 8px;
+  	background: #111;
+}
+
+.progress-bar {
+  	height: 8px;
+  	background: var(--secondary-font-color);
+  	width: 0%;
+}*/
+
+.bar{
+  position: absolute;
+  top: 0;
+  padding: 1rem;
+  display: inline-flex;
+  width: 2rem;
+  margin: 0 10px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  opacity: 0;
+  animation: grow 5s infinite ease/*forwards*/;
+}
+.bar1{
+  left: 5%;
+  height: 92%;
+  background:linear-gradient(to bottom, #5c6898, #d1d5fa, #a9dfe2);
+}
+
+.bar2{
+  left: 31%;
+  height: 67%;
+  background: linear-gradient(to bottom, #055b5c, #089790, #6ec6ca);
+  animation-delay: .3s;
+}
+
+.bar3{
+  left: 57%;
+  height: 44%;
+  background: linear-gradient(to bottom, #031b88, #6096fd, #aab6fb);
+  animation-delay: .5s;
+}
+
+.bar4{
+  right: 3%;
+  height: 23%;
+  background: linear-gradient(to bottom, #2c6975, #6882a0, #cde0c9);
+  animation-delay: .7s;
+}
+
+.bar-text{
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  font-size: 4rem;
+  font-weight: bolder;
+  /*-webkit-box-reflect: below-60px linear-gradient(transparent,rgba(0,0,0,0.2));*/
+}
+
+.hero-img{
+  position: absolute;
+  bottom: 1%;
+  right: 10%;
+  width: 35%;
+  border-radius: 50%;
+  /*box-shadow: linear-gradient(to bottom, #2c6975, #6882a0, #cde0c9);*/
+  opacity: .7;
+}
+
+.hero-img:hover{
+  opacity: 1;
+}
+
+/*About Section*/
+.description{
+  width: 100%;
+  height: 100vh;
+  color: var(--main-font-color-dark);
+  background: linear-gradient(to top, #031b88, #6096fd, #aab6fb);
+  overflow: hidden;
+}
+
+.description-heading{
+  position: relative;
+  font-family: var(--main-font);
+  font-size: var(--secondary-font-size);
+  font-weight: bold;
+  padding: 1.5rem;
+}
+
+.description-paragraph{
+  padding: 0 1.5rem;
+  font-size: var(--body-font-size);
+  font-family: var(--body-font);
+}
+
+/*services*/
+.services{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, #031b88, #6096fd, #aab6fb);
+}
+
+/*clients*/
+.clients{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, #5c6898, #d1d5fa, #a9dfe2);
+}
+
+.contact{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, #5c6898, #d1d5fa, #a9dfe2);
+}
+
+/*keyframes*/
+@keyframes grow{
+  0%{
+    height: 0;
+  }
+  100%{
+    opacity: 1;
+    height: '';
+  }
+}
