@@ -1,64 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<html lang="en">
-<head><meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Home</title>
-	<!--Font awesome CDN-->
+    <title>Oneya|Home</title>
+    <!--Font awesome CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!--Scroll reveal CDN-->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-	<header>
-		<span onclick="openNav()"><i class="fas fa-bars"></i></span>
-		<div id="main">
-			<div id="mySidenav" class="sidenav">
-  				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  				<a href="#">About</a>
-  				<a href="#">Services</a>
-  				<a href="#">Clients</a>
-  				<a href="#">Contact</a>
+	<header class="container">
+		<div class="hero">
+			<nav>
+				<span onclick="openNav()"><i class="fas fa-bars"></i></span>
+				<div id="main">
+					<div id="mySidenav" class="sidenav">
+		  				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  				<a href="#">About</a>
+		  				<a href="#">Services</a>
+		  				<a href="#">Clients</a>
+		  				<a href="#">Contact</a>
+					</div>
+				</div>
+			</nav>
+
+			<!--progress bar start-->
+			<div class="progress-container">
+	    		<div class="progress-bar" id="Progbar"></div>
+	  		</div> 
+
+	  		<div>
+				<div class="bar bar1"></div>
+				<div class="bar bar2"></div>
+				<div class="bar bar3"></div>
+				<div class="bar bar4"></div>
+				<p class="hero-text">O'neya Ink.</p>
+				<img class="hero-img" src="media/face.jpg">
+			</div>
+		</div>  
+	</header>
+	<!--Header ends-->
+
+	<section class="container">
+		<div class="description">
+			<div class="description-heading">
+				<p><span class="first-letter">A</span>bout</p>
+			</div>
+			<div class="description-paragraph">
+				<p>O'neya Ink is a cooperation of top notch layout, web and graphic designers who work together to help you brand your business online which will in turn deliver more clients to you. We do not just sell websites, we build websites that sell.</p>
+				<p>We create stylish and responsive websites that allow businesses increase their digital presence and outreach to existing and potential customers. Do not lose a client(s) simply because they can not find information on your products or services or rather because you missed their call or they did not have the patience to call your office(s). Have that information up on the web 👍! It is super easy. You call us, tell us what you want and we work together to actualize it and advertise your business.</p>
+				<p>We also create personal websites for creatives like bloggers, artists, and any other creative to increase their digital presence and help them market themselves.</p>
 			</div>
 		</div>
+	</section>
+	<!--end of discover-->
 
-		<!--progress bar start-->
-		<!-- <div class="progress-container">
-    		<div class="progress-bar" id="Progbar"></div>
-  		</div> -->
-  		<div class="hero">
-			<div class="bar bar1"></div>
-			<div class="bar bar2"></div>
-			<div class="bar bar3"></div>
-			<div class="bar bar4"></div>
-			<p class="hero-text">O'neya Ink.</p>
-			<img class="hero-img" src="media/face.jpg">
-		</div>
-	</header>
-
-	<section class="description">
-		<div class="description-heading">
-			<p><span class="first-letter">A</span>bout</p>
-		</div>
-		<div class="description-paragraph">
-			<p>O'neya Ink is a cooperation of top notch layout, web and graphic designers who work together to help you brand your business online which will in turn deliver more clients to you. We do not just sell websites, we build websites that sell.</p>
-			<p>We create stylish and responsive websites that allow businesses increase their digital presence and outreach to existing and potential customers. Do not lose a client(s) simply because they can not find information on your products or services or rather because you missed their call or they did not have the patience to call your office(s). Have that information up on the web 👍! It is super easy. You call us, tell us what you want and we work together to actualize it and advertise your business.</p>
-			<p>We also create personal websites for creatives like bloggers, artists, and any other creative to increase their digital presence and help them market themselves.</p>
+	<section class="container">
+		<div class="services">
+			<p class="services-offered">djdoidosdnnhdsofo</p>
 		</div>
 	</section>
+	<!--end of tasteful recipes-->
 
-	<section class="services">
-		<p class="services-offered">djdoidosdnnhdsofo</p>
+	<section class="container">
+		<div class="clients">
+			<p class="clients-served">djdoidosdnnhdsofo</p>
+		</div>
 	</section>
+	<!--Dicover menu ends-->
 
-	<section class="clients">
-		<p class="clients-served">djdoidosdnnhdsofo</p>
-	</section>
-
-	<section class="contact">
-		<p class="clients-served">djdoidosdnnhdsofo</p>
-	</section>
+	<section class="container">
+		<div class="contact">
+			<p class="clients-served">djdoidosdnnhdsofo</p>
+		</div>
+	</section> 
+	<!--perfect blend ends-->
 
 <script src="scripts.js"></script>
 </body>
