@@ -152,7 +152,7 @@ header{
 }
 
 .bar4{
-  left: 80%;
+  right: 1.5%;
   height: 23%;
   background: linear-gradient(to bottom, #2c6975, #6882a0, #cde0c9);
   animation-delay: .7s;
