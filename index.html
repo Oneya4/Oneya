@@ -8,13 +8,12 @@
     <!--Font awesome CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <!--Scroll reveal CDN-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 	<header class="container">
-		<div class="hero">
-			<nav>
+		<nav>
 				<span onclick="openNav()"><i class="fas fa-bars"></i></span>
 				<div id="main">
 					<div id="mySidenav" class="sidenav">
@@ -25,8 +24,9 @@
 		  				<a href="#">Contact</a>
 					</div>
 				</div>
-			</nav>
-
+		</nav>
+		<!-- end of navigation -->
+		<div class="hero">
 			<!--progress bar start-->
 			<div class="progress-container">
 	    		<div class="progress-bar" id="Progbar"></div>
@@ -67,7 +67,16 @@
 
 	<section class="container">
 		<div class="services">
-			<p class="services-offered">djdoidosdnnhdsofo</p>
+			<div class="card middle">
+				<div class="front">
+					<img src="media/kairo.jpeg">
+				</div>
+				<div class="back">
+					<div class="back-content">
+						<h2>Card</h2>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<!--end of tasteful recipes-->
