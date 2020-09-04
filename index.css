@@ -299,8 +299,14 @@ header{
   width: 100%;
 }
 
+.back-content h1{
+  font-size: 3rem;
+  padding: .6rem;
+}
+
 .back-content p{
   color: #333;
+  padding: .6rem;
 }
 
 .card:hover > .front{
