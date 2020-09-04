@@ -227,18 +227,31 @@ header{
   align-items: center;
   justify-content: center;
   font-size: 8rem;
-  margin: 1.5rem;
+  margin: 1rem;
 }
 
 /*services*/
 .services{
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(to left, #111, #222);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding-bottom: 1rem;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.column{
+  float: left;
+  margin: 10px;
 }
 
 .card{
@@ -246,8 +259,8 @@ header{
   top: 10px;
   left: 0;
   cursor: pointer;
-  width: 340px;
-  height: 480px;
+  width: 300px;
+  height: 380px;
 }
 
 .front, .back{
@@ -266,7 +279,7 @@ header{
 
 .back{
   background: #f1f1f1;
-  transform: perspective(600px) rotateY(180deg);
+  transform: perspective(0) rotateY(180deg);
 }
 
 .back-content{
@@ -276,12 +289,18 @@ header{
 }
 
 .card:hover > .front{
-  transform: perspective(600px) rotateY(-180deg);
+  transform: perspective(0) rotateY(-180deg);
 }
 
 .card:hover > .back{
-  transform: perspective(600px) rotateY(0deg);
+  transform: perspective(0) rotateY(0deg);
 }
+
+.row::after{
+  content: "";
+  clear: both;
+}
+
 /*clients*/
 .clients{
   width: 100%;
