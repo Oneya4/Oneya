@@ -1,3 +1,8 @@
+var http = require('http');
+http.createServer(function(req, res){
+	res.writeHead(303,{'Content-Type':'text/html'})
+});
+
 /*progress bar*/
 window.onscroll = function() {myScroll()};
 function myScroll(){

@@ -301,12 +301,18 @@ header{
 
 .back-content h1{
   font-size: 3rem;
-  padding: .6rem;
+  padding: .6rem,0,.6rem,.6rem;
+}
+
+.back-content h3, h4{
+  font-family: var(--body-font);
+  padding: .4rem;
+  margin-bottom: .5rem;
 }
 
 .back-content p{
   color: #333;
-  padding: .6rem;
+  padding: .5rem 0;
 }
 
 .card:hover > .front{
@@ -325,14 +331,60 @@ header{
 /*clients*/
 .clients{
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  background: linear-gradient(to top, #5c6898, #d1d5fa, #a9dfe2);
+  padding: 1rem 0;
+}
+
+.clients-heading{
+  color: #111;
+}
+
+.client-card{
+  position: relative;
+  top: 10px;
+  left: 0;
+  width: 300px;
+  height: 380px;
+}
+
+.client-front{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.client-front img{
+  height: 100%;
+  width: 100%;
+}
+
+.client-button{
+  color: #111;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: .6rem;
+  cursor: pointer;
   background: linear-gradient(to bottom, #5c6898, #d1d5fa, #a9dfe2);
+  border-radius: 10px;
+}
+
+.client-button a{
+  text-decoration: none;
+  color: #111;
+  font-family: var(--body-font);
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .contact{
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to bottom, #111, #222);
+  background: linear-gradient(to right, #111, #222);
 }
 
 /*key frames*/
@@ -342,7 +394,6 @@ header{
   }
   100%{
     opacity: 1;
-    height: '';
   }
 }
 
