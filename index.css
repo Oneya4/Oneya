@@ -174,7 +174,7 @@ header{
 
 #hero_img{
   position: absolute;
-  bottom: 1%;
+  bottom: 10px;
   right: 10px;
   width: 40%;
   border-radius: 50%;
@@ -278,7 +278,7 @@ header{
 }
 
 .back{
-  background: #f1f1f1;
+  background: #fff;
   transform: perspective(0) rotateY(180deg);
 }
 
@@ -286,10 +286,10 @@ header{
   content: '';
   position: absolute;
   top: -50%;
-  opacity: .3;
+  /*opacity: .9;*/
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, #031b88, #6096fd, #aab6fb);
+  background: linear-gradient(to bottom, #031b88, #6096fd, #aab6fb);
   transform: skewY(345deg);
 }
 
@@ -297,22 +297,28 @@ header{
   color: #111;
   text-align: center;
   width: 100%;
+  position: relative;
+  z-index: 3;
 }
 
 .back-content h1{
   font-size: 3rem;
   padding: .6rem,0,.6rem,.6rem;
+  font-weight: bolder;
 }
 
 .back-content h3, h4{
-  font-family: var(--body-font);
   padding: .4rem;
   margin-bottom: .5rem;
+  font-family: var(--body-font);
+  font-weight: bolder;
 }
 
 .back-content p{
-  color: #333;
+  color: #111;
+  font-weight: bold;
   padding: .5rem 0;
+  font-family: var(--body-font);
 }
 
 .card:hover > .front{
@@ -362,20 +368,20 @@ header{
 }
 
 .client-button{
-  color: #111;
+  color: #fff;
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: .6rem;
   cursor: pointer;
-  background: #00bcd4;
+  background: linear-gradient(to right, #222, #333);
   border-radius: 10px;
 }
 
 .client-button a{
   text-decoration: none;
-  color: #111;
+  color: #fff;
   font-family: var(--body-font);
   font-size: 1rem;
   font-weight: bold;

@@ -10,8 +10,30 @@
     <!--Scroll reveal CDN-->
     <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
     <link rel="stylesheet" href="index.css">
+    <script>
+    	document.onkeydown = function (e) {
+	        if (event.keyCode == 123) {
+	            return false;
+	        }
+	        if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'i'.charCodeAt(0))) {
+	            return false;
+	        }
+	        if (e.ctrlKey && e.shiftKey && (e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'c'.charCodeAt(0))) {
+	            return false;
+	        }
+	        if (e.ctrlKey && e.shiftKey && (e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'j'.charCodeAt(0))) {
+	            return false;
+	        }
+	        if (e.ctrlKey && (e.keyCode == 'U'.charCodeAt(0) || e.keyCode == 'u'.charCodeAt(0))) {
+	            return false;
+	        }
+	        if (e.ctrlKey && (e.keyCode == 'S'.charCodeAt(0) || e.keyCode == 's'.charCodeAt(0))) {
+	            return false;
+	        }
+    	}
+	</script>
 </head>
-<body>
+<body oncontextmenu="return false;">
 	<header class="container">
 		<nav>
 				<span onclick="openNav()"><i class="fas fa-bars"></i></span>
@@ -38,7 +60,7 @@
 				<div class="bar bar3"></div>
 				<div class="bar bar4"></div>
 				<p class="hero-text">O'neya Ink.</p>
-				<img id="hero_img" src="media/face.jpg" onclick="expandImage()">
+				<img id="hero_img" src="media/face.jpg">
 			</div>
 		</div>  
 	</header>
@@ -80,6 +102,7 @@
 					<div class="card">
 						<div class="front">
 							<img src="media/scorpion3.png">
+							<button class="client-button">View</button>
 						</div>
 						<div class="back">
 							<div class="back-content">
@@ -100,6 +123,7 @@
 					<div class="card">
 						<div class="front">
 							<img src="media/scorpion3.png">
+							<button class="client-button">View</button>
 						</div>
 						<div class="back">
 							<div class="back-content">
@@ -120,6 +144,7 @@
 					<div class="card">
 						<div class="front">
 							<img src="media/scorpion3.png">
+							<button class="client-button">View</button>
 						</div>
 						<div class="back">
 							<div class="back-content">
@@ -141,6 +166,7 @@
 					<div class="card">
 						<div class="front">
 							<img src="media/scorpion3.png">
+							<button class="client-button">View</button>
 						</div>
 						<div class="back">
 							<div class="back-content">
