@@ -8,30 +8,9 @@
     <!--Font awesome CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <!--Scroll reveal CDN-->
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Local stylesheet -->
     <link rel="stylesheet" href="index.css">
-    <script>
-    	document.onkeydown = function (e) {
-	        if (event.keyCode == 123) {
-	            return false;
-	        }
-	        if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'i'.charCodeAt(0))) {
-	            return false;
-	        }
-	        if (e.ctrlKey && e.shiftKey && (e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'c'.charCodeAt(0))) {
-	            return false;
-	        }
-	        if (e.ctrlKey && e.shiftKey && (e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'j'.charCodeAt(0))) {
-	            return false;
-	        }
-	        if (e.ctrlKey && (e.keyCode == 'U'.charCodeAt(0) || e.keyCode == 'u'.charCodeAt(0))) {
-	            return false;
-	        }
-	        if (e.ctrlKey && (e.keyCode == 'S'.charCodeAt(0) || e.keyCode == 's'.charCodeAt(0))) {
-	            return false;
-	        }
-    	}
-	</script>
 </head>
 <body oncontextmenu="return false;">
 	<header class="container">
@@ -59,8 +38,8 @@
 				<div class="bar bar2"></div>
 				<div class="bar bar3"></div>
 				<div class="bar bar4"></div>
-				<p class="hero-text">O'neya Ink.</p>
-				<img id="hero_img" src="media/face.jpg">
+				<p class="hero-text"><span class="first-letter">O</span>'neya Ink.</p>
+				<img id="hero_img" src="media/face.jpg" data-aos="zoom-in" data-aos-duration="1500">
 			</div>
 		</div>  
 	</header>
@@ -85,7 +64,7 @@
 			</div>
 		</div>
 	</section>
-	<!--end of discover-->
+	<!--About section ends-->
 
 	<section class="container">
 		<div class="services" id="services">
@@ -98,7 +77,7 @@
 			</div>
 
 			<div class="row">
-				<div class="column">
+				<div class="column" data-aos="zoom-in" data-aos-duration="1500">
 					<div class="card">
 						<div class="front">
 							<img src="media/scorpion3.png">
@@ -186,7 +165,7 @@
 			</div>
 		</div>
 	</section>
-	<!--end of tasteful recipes-->
+	<!--Services section ends-->
 
 	<section class="container">
 		<div class="clients" id="clients">
@@ -217,7 +196,7 @@
 			</div>
 		</div>
 	</section>
-	<!--Dicover menu ends-->
+	<!--Client setion ends-->
 
 	<section class="container">
 		<div class="contact" id="contact">
@@ -271,8 +250,10 @@
 			</div>
 		</div>
 	</section> 
-	<!--perfect blend ends-->
+	<!--Contact section ends-->
 
 <script src="scripts.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
 </body>
 </html>

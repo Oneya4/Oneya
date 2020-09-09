@@ -164,6 +164,7 @@ header{
 }
 
 .hero-text{
+  font-family: var(--body-font);
   position: absolute;
   top: 50%;
   left: 40%;
@@ -178,7 +179,6 @@ header{
   right: 10px;
   width: 40%;
   border-radius: 50%;
-  /*box-shadow: linear-gradient(to bottom, #2c6975, #6882a0, #cde0c9);*/
   opacity: .7;
   cursor: pointer;
 }
