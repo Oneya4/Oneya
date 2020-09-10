@@ -134,7 +134,7 @@ header{
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
   opacity: 0;
-  animation: grow 5s infinite ease/*forwards*/;
+  animation: grow 5s infinite ease;
 }
 .bar1{
   left: 5%;
@@ -367,7 +367,7 @@ header{
   width: 100%;
 }
 
-.client-button{
+.client-button, .package-button{
   color: #fff;
   position: absolute;
   bottom: 0;
